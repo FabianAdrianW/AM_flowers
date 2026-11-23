@@ -107,3 +107,51 @@
   document.getElementById('calWhen').textContent = `${fmt(next.d)}, ${when(days(next.d))}`;
   document.getElementById('calTip').textContent = next.t;
 })();
+
+/* mobile scroll stories: stacked photos + shop carousel (transform/opacity only, one rAF per frame) */
+(() => {
+  const mq = matchMedia('(max-width: 47.99em)');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cards = [...document.querySelectorAll('.story-photos .frame')];
+  const grid = document.querySelector('.shop-grid');
+  const items = grid ? [...grid.querySelectorAll('.card')] : [];
+  const dots = document.getElementById('shopDots');
+  if (dots && items.length) dots.innerHTML = items.map(() => '<i></i>').join('');
+  let ticking = false, active = { story: false };
+
+  const stack = () => {
+    for (let i = 0; i < cards.length; i++) {
+      const c = cards[i], next = cards[i + 1];
+      if (!next) { c.style.setProperty('--s', 1); c.style.setProperty('--b', 1); continue; }
+      const top = c.getBoundingClientRect().top, nt = next.getBoundingClientRect().top, h = c.offsetHeight;
+      const p = Math.min(1, Math.max(0, 1 - (nt - top) / h));          // 0 → next far, 1 → next fully over
+      c.style.setProperty('--s', (1 - p * 0.08).toFixed(4));
+      c.style.setProperty('--b', (1 - p * 0.35).toFixed(3));
+    }
+  };
+  const carousel = () => {
+    const mid = grid.getBoundingClientRect().left + grid.clientWidth * 0.1;
+    let best = 0, bd = Infinity;
+    items.forEach((it, i) => {
+      const r = it.getBoundingClientRect(), d = Math.abs(r.left - mid);
+      const p = Math.min(1, d / r.width);
+      it.style.setProperty('--s', (1 - p * 0.06).toFixed(4));
+      it.style.setProperty('--o', (1 - p * 0.35).toFixed(3));
+      if (d < bd) { bd = d; best = i; }
+    });
+    dots && [...dots.children].forEach((d, i) => d.classList.toggle('on', i === best));
+  };
+  const frame = () => { ticking = false; if (!mq.matches) return; if (active.story) stack(); if (grid) carousel(); };
+  const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } };
+
+  const sec = document.getElementById('historia');
+  sec && new IntersectionObserver(([e]) => { active.story = e.isIntersecting; req(); }).observe(sec);
+  addEventListener('scroll', req, { passive: true });
+  grid && grid.addEventListener('scroll', req, { passive: true });
+  addEventListener('resize', req);
+  mq.addEventListener('change', () => {
+    [...cards, ...items].forEach(el => { el.style.removeProperty('--s'); el.style.removeProperty('--b'); el.style.removeProperty('--o'); });
+    req();
+  });
+  req();
+})();

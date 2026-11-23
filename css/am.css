@@ -335,3 +335,29 @@ p{margin:0;text-wrap:pretty}
 .svc-more .btn{align-self:flex-start;margin-top:.5rem}
 .svc-more a:not(.btn){display:inline-flex;align-items:center;gap:.5rem;min-height:44px;color:var(--gold);font:500 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
 .svc-more a svg{width:.95rem;height:.95rem}
+
+/* ===== mobile: scroll stories ===== */
+.shop-dots{display:none}
+@media (max-width:47.99em){
+  /* Nasza historia: zdjęcia wjeżdżają jedno na drugie */
+  .story-photos{display:block;padding-bottom:1rem}
+  .story-photos .frame,.story-photos .frame.tall{position:sticky;top:calc(var(--nav-h) + .75rem + var(--i,0) * .9rem);aspect-ratio:4/5;margin:0 0 1.25rem!important;
+    transform:scale(var(--s,1));transform-origin:50% 0;filter:brightness(var(--b,1));will-change:transform;box-shadow:0 -12px 30px -18px rgba(10,30,25,.45)}
+  .story-photos .frame:nth-child(1){--i:0}.story-photos .frame:nth-child(2){--i:1}.story-photos .frame:nth-child(3){--i:2}
+  .story-photos .rv{opacity:1;transform:scale(var(--s,1));transition:none}
+
+  /* Sklep: karuzela z podglądem następnego bukietu */
+  .shop-grid{display:flex;gap:1rem;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;
+    margin-inline:calc(50% - 50vw);padding:.25rem calc(50vw - 50% + 0px) 0;padding-inline:max(1.25rem,calc(50vw - 50%));scroll-padding-inline:max(1.25rem,calc(50vw - 50%))}
+  .shop-grid::-webkit-scrollbar{display:none}
+  .shop-grid .card{flex:0 0 80%;scroll-snap-align:start;transform:scale(var(--s,1));opacity:var(--o,1);transform-origin:50% 60%;will-change:transform}
+  .shop-grid .rv{transition:none;opacity:var(--o,1)}
+  .shop-grid .rv.in,.shop-grid .rv{transform:scale(var(--s,1))}
+  .shop-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.25rem}
+  .shop-dots i{width:.45rem;height:.45rem;border:1px solid var(--gold);transform:rotate(45deg);transition:background .3s var(--ease),transform .3s var(--ease)}
+  .shop-dots i.on{background:var(--gold);transform:rotate(45deg) scale(1.25)}
+}
+@media (max-width:47.99em) and (prefers-reduced-motion:reduce){
+  .story-photos .frame,.story-photos .frame.tall{position:static;transform:none;filter:none}
+  .shop-grid .card{transform:none;opacity:1}
+}
