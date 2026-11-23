@@ -175,3 +175,32 @@
   items.forEach(el => io.observe(el));
   set(0);
 })();
+
+/* ornamental scrollbar: star follows the page, drag or click the rail to scroll */
+(() => {
+  const el = document.querySelector('.orn-scroll');
+  if (!el || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  document.documentElement.classList.add('has-orn');
+  const rail = el.querySelector('.orn-rail'), thumb = el.querySelector('.orn-thumb');
+  const doc = document.documentElement;
+  let ticking = false, drag = null;
+  const max = () => Math.max(1, doc.scrollHeight - innerHeight);
+  const travel = () => rail.clientHeight - thumb.offsetHeight + 4;
+  const paint = () => {
+    ticking = false;
+    const p = Math.min(1, Math.max(0, scrollY / max()));
+    el.style.setProperty('--sp', p.toFixed(4));
+    el.style.setProperty('--ty', (p * travel()).toFixed(1) + 'px');
+  };
+  const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(paint); } };
+  addEventListener('scroll', req, { passive: true });
+  addEventListener('resize', req);
+  new ResizeObserver(req).observe(document.body);
+  const toY = clientY => { const r = rail.getBoundingClientRect(); return Math.min(1, Math.max(0, (clientY - r.top - thumb.offsetHeight / 2) / travel())); };
+  thumb.addEventListener('pointerdown', e => { e.preventDefault(); drag = { y: e.clientY, s: scrollY }; thumb.setPointerCapture(e.pointerId); el.classList.add('drag'); });
+  thumb.addEventListener('pointermove', e => { if (!drag) return; scrollTo({ top: drag.s + (e.clientY - drag.y) / travel() * max(), behavior: 'instant' }); });
+  const stop = () => { drag = null; el.classList.remove('drag'); };
+  thumb.addEventListener('pointerup', stop); thumb.addEventListener('pointercancel', stop);
+  rail.addEventListener('click', e => scrollTo({ top: toY(e.clientY) * max(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }));
+  paint();
+})();

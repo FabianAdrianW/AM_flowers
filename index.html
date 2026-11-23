@@ -19,7 +19,7 @@
 <link rel="preload" href="fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="img/f2-800.webp" media="(max-width: 47.99em)">
 <link rel="preload" as="image" href="img/hero-poster.webp" media="(min-width: 48em)">
-<link rel="stylesheet" href="css/am.css?v=5">
+<link rel="stylesheet" href="css/am.css?v=6">
 <script>document.documentElement.classList.replace('no-js','js');try{var q=new URLSearchParams(location.search);var z=q.get('z')==='malgorzata';if(z){q.delete('z');history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+location.hash)}if(z||sessionStorage.getItem('amArrive')){sessionStorage.removeItem('amArrive');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('arrive')}}catch(e){}</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Florist","name":"AM Flowers","alternateName":"Kwiaciarnia Małgorzata","url":"https://amflowers.pl/","image":"https://amflowers.pl/img/og.jpg","telephone":["+48505308258","+48570740729"],"address":{"@type":"PostalAddress","streetAddress":"ul. J. Iwaszkiewicza 137B","addressLocality":"Oława","postalCode":"55-200","addressCountry":"PL"},"sameAs":["https://www.instagram.com/malgorzatakwiaciarnia/","https://www.facebook.com/kwiaciarniamalgorzata"],"department":{"@type":"Store","name":"Kwiatomat 24/7 AM Flowers","address":{"@type":"PostalAddress","streetAddress":"ul. ks. prał. F. Kutrowskiego 29","addressLocality":"Oława","postalCode":"55-200","addressCountry":"PL"},"openingHours":"Mo-Su 00:00-23:59"}}
@@ -338,6 +338,12 @@
   <a href="sklep.html">Zamów bukiet</a>
 </nav>
 
-<script src="js/am.js?v=5" defer></script>
+<div class="orn-scroll" aria-hidden="true">
+  <svg class="orn-cap t" viewBox="0 0 40 40"><path class="d" d="M20 2l5 6-5 6-5-6z"/><path d="M16.5 40V27c0-4-2.5-5.5-7-5.5M23.5 40V27c0-4 2.5-5.5 7-5.5"/></svg>
+  <span class="orn-rail"><span class="orn-fill"></span></span>
+  <svg class="orn-cap b" viewBox="0 0 40 40"><path class="d" d="M20 38l5-6-5-6-5 6z"/><path d="M16.5 0v13c0 4-2.5 5.5-7 5.5M23.5 0v13c0 4 2.5 5.5 7 5.5"/></svg>
+  <span class="orn-thumb"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="o"/><circle cx="50" cy="50" r="36" class="i"/><polygon points="50.0,23.0 54.0,40.3 69.1,30.9 59.7,46.0 77.0,50.0 59.7,54.0 69.1,69.1 54.0,59.7 50.0,77.0 46.0,59.7 30.9,69.1 40.3,54.0 23.0,50.0 40.3,46.0 30.9,30.9 46.0,40.3"/></svg></span>
+</div>
+<script src="js/am.js?v=6" defer></script>
 </body>
 </html>
