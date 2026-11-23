@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "brand": {
+    "name": "AM Flowers",
+    "legacy_name": "Kwiaciarnia Małgorzata",
+    "descriptor": "Kwiaciarnia mamy i córki w Oławie: pracownia, sklep online, kwiatomat 24/7",
+    "promise": "Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "promise_plain": "Ta sama AMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "transition_line": "Kwiaciarnia Małgorzata rośnie. AMiłość do kwiatów zostaje.",
+    "essence": "Tradycja mamy, nowoczesność córki, jedne ręce do kwiatów.",
+    "since": {"am_flowers": "2021 (H)", "malgorzata": "TODO"}
+  },
+  "contact": {
+    "phones": ["505 308 258", "570 740 729"],
+    "phones_note": "oba do kwiaciarni (H), przypisanie do potwierdzenia",
+    "email": "TODO",
+    "address": "ul. J. Iwaszkiewicza 137B, 55-200 Oława",
+    "kiosk": {"name": "Kwiatomat 24/7", "address": "Intermarché, ul. ks. prał. F. Kutrowskiego 29, 55-200 Oława", "hours": "24/7"},
+    "area": "Oława i okolice",
+    "domain": "amflowers.pl (H)",
+    "facebook": "Kwiaciarnia \"Małgorzata\"",
+    "instagram": "@malgorzatakwiaciarnia"
+  },
+  "tokens": {
+    "color": {
+      "accent": "#C9A45C",
+      "accent_text": "#7A5A22",
+      "gold_gradient": "linear-gradient(120deg,#A0722F 0%,#C99A4B 30%,#F4D98E 52%,#B07E36 70%,#E0BA6C 100%)",
+      "paper": "#FBF8F2",
+      "ink": "#1C1A17",
+      "muted": "#5E6B63",
+      "white": "#FFFFFF",
+      "emerald": "#0F2A24",
+      "emerald_deep": "#0A1E19",
+      "ivory": "#F4EEE3",
+      "blush": "#E2C6C0",
+      "line": "rgba(122,90,34,.28)",
+      "surface": "#FFFFFF"
+    },
+    "contrast": {
+      "ink/paper": 16.4, "accent_text/paper": 6.0, "muted/paper": 5.3, "accent/paper": 2.8,
+      "ivory/emerald": 13.2, "accent/emerald": 6.5, "blush/emerald": 9.5, "emerald/accent": 6.5
+    },
+    "font": {
+      "display": "Cormorant Garamond",
+      "body": "Jost",
+      "logo_note": "logo tylko jako oryginalne SVG (trace 1:1), bez składania z fontu",
+      "license": "SIL OFL 1.1"
+    },
+    "radius": "2px",
+    "grid": 12,
+    "ease": "cubic-bezier(.22,1,.36,1)",
+    "motion_ms": {"hover": 300, "reveal": 700, "swipe": 900}
+  },
+  "voice": {
+    "address": "Ty",
+    "yes": ["ciepło", "konkretnie", "spokojnie"],
+    "no": ["przesłodzenie", "korpo-nowomowa", "krzyk promocji"],
+    "banned": ["luksusowy", "ekskluzywny", "najlepszy", "unikalny", "wyjątkowy", "z pasją", "dla wymagających"],
+    "rule": "okazja > bukiet > jak odebrać > jedno działanie"
+  },
+  "archetype": {
+    "primary": "Twórca",
+    "supporting": "Kochanek",
+    "shadow_avoid": "dystans i „drogo na pokaz”: ręce przy pracy w ważnych kadrach, widoczne ceny, ciepły język"
+  },
+  "soul": {
+    "brand_line": "Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "metaphor": "splot",
+    "motif": "podwójna złota linia z wizytówki: narożnik, przerywnik z rombem, okrąg z gwiazdą",
+    "prop": "szmaragdowa satynowa wstążka",
+    "photo_world": "szmaragdowy aksamit albo papier #FBF8F2, ciepłe światło z lewej góry, kwiaty w kości słoniowej, pudrze i szampanie",
+    "section_schema": "eyebrow > h2 > lead > cta"
+  },
+  "contexts": [
+    {"id": "okazja", "label": "Okazja", "meaning": "urodziny, rocznica: szybko i pewnie", "image": "images/f7.jpg"},
+    {"id": "ostatnia-chwila", "label": "Ostatnia chwila", "meaning": "wieczór, niedziela: kwiatomat 24/7", "image": "images/f6.jpg"},
+    {"id": "slub", "label": "Ślub", "meaning": "wiązanka i dekoracje", "image": "images/f9.jpg"},
+    {"id": "pamiec", "label": "Pamięć", "meaning": "wieńce i wiązanki, z taktem", "image": "images/f11.jpg"},
+    {"id": "staly-klient", "label": "Stały klient", "meaning": "zna Małgorzatę i ma zobaczyć, że to ona", "image": "images/f4.jpg"}
+  ],
+  "method": ["Wybierasz", "Florystka układa", "Odbierasz: pracownia, kwiatomat 24/7 albo dostawa"],
+  "messages": {
+    "hero": "Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "short": "AM Flowers to Kwiaciarnia Małgorzata w nowej odsłonie: mama i córka, pracownia w Oławie, sklep online i kwiatomat 24/7.",
+    "cta": "Zamów bukiet",
+    "cta_secondary": "Znajdź kwiatomat",
+    "swipe_label": "Kwiaciarnia Małgorzata rośnie. Przeciągnij →"
+  },
+  "assets": {
+    "logo": "logo/am-flowers-gold.svg",
+    "logo_light": "logo/am-flowers-ivory.svg",
+    "logo_dark": "logo/am-flowers-ink.svg",
+    "monogram": "logo/am-monogram-gold.svg",
+    "lockup_transition": "logo/lockup-am-x-malgorzata.svg",
+    "lockup_transition_dark": "logo/lockup-am-x-malgorzata-on-emerald.svg",
+    "ornaments": ["logo/ornament-corner.svg", "logo/ornament-divider.svg", "logo/ornament-star.svg"]
+  }
+}
