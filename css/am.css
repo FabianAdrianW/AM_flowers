@@ -326,3 +326,12 @@ p{margin:0;text-wrap:pretty}
 .faq details p{color:var(--muted);padding:0 2.5rem 1.4rem 0;max-width:62ch}
 @media (hover:hover){.faq summary:hover i{border-color:var(--gold)}}
 @media (min-width:56em){.faq-grid{grid-template-columns:1fr 1.6fr;gap:clamp(3rem,7vw,7rem);align-items:start}.faq-grid .section-head{position:sticky;top:calc(var(--nav-h) + 2rem)}}
+.svc-more{position:relative;background:var(--emerald);color:var(--ivory);border-radius:var(--r);padding:clamp(1.75rem,3vw,2.5rem);display:flex;flex-direction:column;justify-content:center;gap:1rem;min-height:22rem}
+.svc-more:before,.svc-more:after{content:"";position:absolute;width:2.25rem;height:2.25rem;border:solid var(--gold)}
+.svc-more:before{top:.9rem;left:.9rem;border-width:1px 0 0 1px}.svc-more:after{bottom:.9rem;right:.9rem;border-width:0 1px 1px 0}
+.svc-more img{width:2.75rem}
+.svc-more h3{font-size:2rem}
+.svc-more p{color:var(--ivory-2);max-width:32ch}
+.svc-more .btn{align-self:flex-start;margin-top:.5rem}
+.svc-more a:not(.btn){display:inline-flex;align-items:center;gap:.5rem;min-height:44px;color:var(--gold);font:500 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.svc-more a svg{width:.95rem;height:.95rem}

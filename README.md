@@ -8,7 +8,7 @@ Statyczny HTML/CSS/JS bez kroku budowania + dwie funkcje Cloudflare Pages.
 
 | Plik / folder | Co to |
 |---|---|
-| `index.html` | Strona główna: hero z wideo, historia, sklep, kalendarz okazji, oferta (6 usług), kwiatomat 24/7, śluby i pamięć, dla firm, pytania, kontakt |
+| `index.html` | Strona główna: hero z wideo, historia, sklep, kalendarz okazji, oferta (5 usług + nietypowe zamówienia), kwiatomat 24/7, śluby i pamięć, dla firm, pytania, kontakt |
 | `sklep.html` | Sklep przeniesiony z repo Kwiaciarni Małgorzata w stylu AM Flowers: kategorie, karta produktu, koszyk, zamówienie |
 | `sukces.html` | Strona po udanej płatności |
 | `regulamin.html`, `polityka-prywatnosci.html` | Projekty dokumentów z polami TODO, do sprawdzenia przez prawnika |
@@ -51,6 +51,5 @@ Ceny i produkty: `data/products.json`. Zdjęcie do `img/` (WebP, proporcja 4:5),
 - Rok 2021 i imię córki w sekcji „Historia”.
 - Kwiatomat: sposób płatności, prawdziwe zdjęcie.
 - Zgoda na zdjęcia z Facebooka (produkty p01–p16).
-- Oferta (sekcje „Oferta”, „Dla firm”, „Pytania”): potwierdzić z AM Flowers, które usługi faktycznie prowadzą (warsztaty, abonament dla firm, kosze prezentowe, rośliny i kwiaty trwałe, dekoracje sal) i czy zamówienie „na dziś” jest możliwe.
-- Zdjęcia f12–f18 dla nowych sekcji (prompty w `brand/image_prompts.md`); teraz są zaślepki `img/s-*.webp`.
+- Oferta (sekcje „Oferta”, „Dla firm”, „Pytania”): potwierdzić z AM Flowers, które usługi faktycznie prowadzą (abonament dla firm, kosze prezentowe, rośliny i kwiaty trwałe, dekoracje sal) i czy zamówienie „na dziś” jest możliwe.
 - Po wdrożeniu: Google Business Profile, Search Console.

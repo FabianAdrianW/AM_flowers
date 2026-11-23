@@ -80,11 +80,6 @@ Advent wreath of fir branches, eucalyptus, dried orange slices and four ivory ca
 Elegant banquet hall prepared for a family celebration, long table with a low garland of ivory roses, blush peonies and eucalyptus running down the middle, tall ivory candles in brass holders, emerald linen napkins, soft evening light, no people. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
 ```
 
-## f14. Warsztaty florystyczne (`s-warsztaty.webp`, 3:4)
-```
-Floristry workshop seen from above the table: several pairs of hands (no faces) arranging small bouquets on a long oak table, buckets of roses, eucalyptus and ranunculus, brass scissors, spools of emerald satin ribbon, warm friendly atmosphere. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
-```
-
 ## f15. Kosze i zestawy prezentowe (`s-prezenty.webp`, 3:4)
 ```
 Gift set on warm ivory paper: a small hand-tied bouquet of blush roses, a deep emerald gift box with lid open showing chocolates, an ivory candle in a glass jar and a small ivory gift card with a thin gold double-line art deco border and no writing, emerald satin ribbon. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
