@@ -155,3 +155,23 @@
   });
   req();
 })();
+
+/* Oferta (mobile): description in the reading zone switches the sticky photo */
+(() => {
+  const track = document.querySelector('.svc-track'); if (!track) return;
+  const items = [...track.querySelectorAll('.svc')];
+  const imgs = [...track.querySelectorAll('.svc-stage img')];
+  const count = track.querySelector('.svc-count b');
+  let cur = -1;
+  const set = i => {
+    if (i === cur) return; cur = i;
+    items.forEach((el, k) => el.classList.toggle('is-on', k === i));
+    imgs.forEach((im, k) => im.classList.toggle('on', k === i));
+    if (count) count.textContent = String(i + 1).padStart(2, '0');
+    const nx = imgs[i + 1]; if (nx) nx.loading = 'eager';           // preload the next photo
+  };
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) set(items.indexOf(e.target)); }),
+    { rootMargin: '-62% 0px -30% 0px' });
+  items.forEach(el => io.observe(el));
+  set(0);
+})();
