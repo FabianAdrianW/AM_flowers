@@ -27,6 +27,7 @@ Statyczny HTML/CSS/JS bez kroku budowania + dwie funkcje Cloudflare Pages.
 2. *Settings → Variables and secrets*:
    - `STRIPE_SECRET_KEY`: najpierw `sk_test_…`, po testach klucz produkcyjny. W Stripe włącz **BLIK** i **Przelewy24**.
    - `ORDER_WEBHOOK_URL` (+ opcjonalnie `ORDER_WEBHOOK_TOKEN`): adres backendu formularzy, który wyśle zamówienie e-mailem lub SMS-em.
+   - `ALLOWED_ORIGINS`: domena strony Kwiaciarni Małgorzata (np. `https://kwiaciarniamalgorzata.pl`), żeby jej szybkie zamówienie też trafiało do `/api/order`.
    Bez tych zmiennych sklep działa dalej: płatność online przełącza się na płatność przy odbiorze, a zamówienie otwiera SMS z gotową treścią na 570 740 729.
 3. *Custom domains*: podłącz `amflowers.pl` (domena i konto Stripe na klienta).
 

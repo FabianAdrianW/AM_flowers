@@ -1,5 +1,7 @@
 /* AM Flowers · suwak przejścia. Bez zależności.
-   <div class="am-swipe" data-href="https://amflowers.pl/" data-asset-base="https://amflowers.pl/"></div> */
+   <div class="am-swipe" data-href="https://amflowers.pl/" data-asset-base="am/"></div>
+   Linki z atrybutem data-am-go (np. do sklepu AM Flowers) też uruchamiają kurtynę.
+   Docelowa strona dostaje ?z=malgorzata, żeby otworzyć się z rozsuwaną kurtyną (działa między domenami). */
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const THRESHOLD = 0.6;
@@ -57,8 +59,14 @@
     });
   }
 
+  const mark = href => {
+    try { const u = new URL(href, location.href); u.searchParams.set('z', 'malgorzata'); return u.href; } catch (_) { return href; }
+  };
+  let busy = false;
   async function go(href, base, handle) {
+    if (busy) return; busy = true;
     try { sessionStorage.setItem('amArrive', '1'); } catch (_) {}
+    href = mark(href);
     if (reduce) { location.href = href; return; }
     const r = handle.getBoundingClientRect();
     const ly = ((r.top + r.height / 2) / innerHeight * 100).toFixed(2) + '%';
@@ -80,4 +88,14 @@
   }
 
   document.querySelectorAll('.am-swipe').forEach(build);
+
+  /* zwykłe linki do AM Flowers: ta sama kurtyna */
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[data-am-go]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    e.preventDefault();
+    const base = (document.querySelector('.am-swipe') || {}).dataset?.assetBase ?? a.dataset.amGo ?? '';
+    go(a.href, base, a);
+  });
+  window.AMSwipe = { go: (href, el) => go(href, (document.querySelector('.am-swipe') || {}).dataset?.assetBase || '', el || document.body) };
 })();
