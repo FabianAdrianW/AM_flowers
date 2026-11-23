@@ -66,3 +66,41 @@ Slow cinematic push-in on a luxury bouquet of ivory roses and blush peonies agai
 ```
 Deep emerald silk fabric slowly unfolding and rippling, thin gold light reflections sliding across the folds from left to right, elegant and calm, seamless loop, no text. Cinematic, photorealistic, palette of deep emerald green, champagne gold and warm ivory, soft warm light from upper left, no people, no logos, no watermark, 16:9.
 ```
+
+## Nowe sekcje strony (f12–f18)
+Nazwa pliku na stronie w nawiasie. Wygenerowane zdjęcie zapisz pod tą nazwą w `img/` (WebP, ok. 900×1200) albo podeślij, a podmienię.
+
+## f12. Święta i sezon (`s-sezon.webp`, 3:4)
+```
+Advent wreath of fir branches, eucalyptus, dried orange slices and four ivory candles on an old oak table, a few small gold baubles, emerald satin ribbon wrapped around the wreath, cozy winter evening mood. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```
+
+## f13. Dekoracje sal i kościołów (`s-dekoracje.webp`, 3:4)
+```
+Elegant banquet hall prepared for a family celebration, long table with a low garland of ivory roses, blush peonies and eucalyptus running down the middle, tall ivory candles in brass holders, emerald linen napkins, soft evening light, no people. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```
+
+## f14. Warsztaty florystyczne (`s-warsztaty.webp`, 3:4)
+```
+Floristry workshop seen from above the table: several pairs of hands (no faces) arranging small bouquets on a long oak table, buckets of roses, eucalyptus and ranunculus, brass scissors, spools of emerald satin ribbon, warm friendly atmosphere. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```
+
+## f15. Kosze i zestawy prezentowe (`s-prezenty.webp`, 3:4)
+```
+Gift set on warm ivory paper: a small hand-tied bouquet of blush roses, a deep emerald gift box with lid open showing chocolates, an ivory candle in a glass jar and a small ivory gift card with a thin gold double-line art deco border and no writing, emerald satin ribbon. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```
+
+## f16. Rośliny i kompozycje trwałe (`s-rosliny.webp`, 3:4)
+```
+Windowsill with potted plants in matte ivory ceramic pots, a glass jar terrarium with moss and a tiny fern, a small arrangement of dried and preserved flowers in blush and champagne tones, emerald satin ribbon on one pot, soft morning light. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```
+
+## f17. Kwiaty pod drzwi (dostawa) (`s-dostawa.webp`, 3:4)
+```
+Close-up at an apartment door: a hand (no face visible) handing over a bouquet of ivory roses and blush peonies wrapped in ivory paper with an emerald satin ribbon and a small gift card, the other hand reaching to take it, warm hallway light. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```
+
+## f18. Dla firm (abonament) (`s-firmy.webp`, 3:4)
+```
+Tall elegant flower arrangement of ivory roses, white delphinium and eucalyptus in a clear glass vase on a marble reception desk of a modern office or boutique hotel, emerald wall behind, small brass desk lamp, nobody visible. Photorealistic editorial floral photography, soft directional warm light from upper left, palette of deep emerald green (#0F2A24), champagne gold (#C9A45C), warm ivory paper (#FBF8F2) and blush pink petals, one emerald satin ribbon visible, real textures, shallow depth of field, no text, no letters, no logos, no watermark. Aspect ratio 3:4.
+```

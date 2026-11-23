@@ -81,3 +81,29 @@
     btn.addEventListener('click', () => { btn.dataset.user = v.paused ? 'paused' : ''; });
   }
 })();
+
+/* occasion calendar: highlights the next occasion */
+(() => {
+  const list = document.getElementById('calList'); if (!list) return;
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const y = today.getFullYear();
+  const easter = yr => { const a = yr % 19, b = Math.floor(yr / 100), c = yr % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1; return new Date(yr, mo - 1, da); };
+  const def = yr => [
+    { n: 'Walentynki', d: new Date(yr, 1, 14), t: 'Czerwone róże, flowerboxy i bukiety z bilecikiem. Zamów kilka dni wcześniej.' },
+    { n: 'Dzień Kobiet', d: new Date(yr, 2, 8), t: 'Tulipany i małe bukiety, także zamówienia hurtowe dla firm.' },
+    { n: 'Wielkanoc', d: easter(yr), t: 'Stroiki wielkanocne, gałązki i kompozycje na stół.' },
+    { n: 'Dzień Matki', d: new Date(yr, 4, 26), t: 'Najbardziej pracowity dzień w pracowni. Zamów co najmniej dzień wcześniej.' },
+    { n: 'Dzień Nauczyciela', d: new Date(yr, 9, 14), t: 'Małe bukiety i rośliny w doniczce, także dla całej klasy.' },
+    { n: 'Wszystkich Świętych', d: new Date(yr, 10, 1), t: 'Wiązanki na groby, kompozycje nagrobne i znicze. Przygotujemy na wybrany dzień.' },
+    { n: 'Boże Narodzenie', d: new Date(yr, 11, 24), t: 'Stroiki, wieńce adwentowe i bukiety z gałązkami. Zamów wcześniej, w grudniu pracownia ma pełne ręce.' },
+  ];
+  const all = [...def(y), ...def(y + 1)].filter(o => o.d >= today).slice(0, 4);
+  const fmt = d => d.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });
+  const days = d => Math.round((d - today) / 864e5);
+  const when = n => n === 0 ? 'dzisiaj' : n === 1 ? 'jutro' : `za ${n} dni`;
+  list.innerHTML = all.map((o, i) => `<li${i === 0 ? ' class="is-next"' : ''}><span>${fmt(o.d)}</span><b>${o.n}</b><small>${when(days(o.d))}</small></li>`).join('');
+  const next = all[0];
+  document.getElementById('calName').textContent = next.n;
+  document.getElementById('calWhen').textContent = `${fmt(next.d)}, ${when(days(next.d))}`;
+  document.getElementById('calTip').textContent = next.t;
+})();
