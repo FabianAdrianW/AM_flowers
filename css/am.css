@@ -197,7 +197,8 @@ p{margin:0;text-wrap:pretty}
 /* kiosk 24/7 */
 .kiosk{position:relative;overflow:hidden}
 .kiosk-grid{display:grid;gap:2.5rem;align-items:center}
-.kiosk .frame{aspect-ratio:3/4}
+.kiosk .frame{aspect-ratio:4/5;background:var(--paper-2)}
+.kiosk .frame figcaption{position:absolute;z-index:3;left:50%;bottom:.75rem;transform:translateX(-50%);font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:var(--ink);background:var(--paper);padding:.3rem .7rem;border-radius:2px}
 .k247{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
 .k247 img{width:3.25rem}
 .k247 span{font:400 clamp(4rem,12vw,7rem)/.8 var(--serif);background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -260,16 +261,6 @@ p{margin:0;text-wrap:pretty}
 .no-js .rv{opacity:1;transform:none}
 
 /* arrival from Kwiaciarnia Małgorzata swipe */
-.arrive-veil{display:none}
-.arrive .arrive-veil{display:block;position:fixed;inset:0;z-index:999;pointer-events:none}
-.arrive-veil i{position:absolute;top:0;bottom:0;width:50.5%;background:var(--emerald-deep);transition:transform 1s cubic-bezier(.76,0,.24,1)}
-.arrive-veil .l{left:0;border-right:1px solid var(--gold)}.arrive-veil .r{right:0;border-left:1px solid var(--gold)}
-.arrive-veil .mark{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;transition:opacity .45s var(--ease)}
-.arrive-veil .mark img{width:min(46vw,15rem)}
-.arrive-veil .mark p{font:400 clamp(1.5rem,3.6vw,2.4rem)/1.15 var(--serif);color:var(--ivory)}
-.arrive-veil .mark b{color:var(--gold);font-weight:500}
-.arrive-go .arrive-veil .l{transform:translateX(-101%)}.arrive-go .arrive-veil .r{transform:translateX(101%)}
-.arrive-go .arrive-veil .mark{opacity:0}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*:before,*:after{animation:none!important;transition-duration:.01ms!important}

@@ -19,14 +19,16 @@
 <link rel="preload" href="fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="img/f2-800.webp" media="(max-width: 47.99em)">
 <link rel="preload" as="image" href="img/hero-poster.webp" media="(min-width: 48em)">
-<link rel="stylesheet" href="css/am.css?v=6">
-<script>document.documentElement.classList.replace('no-js','js');try{var q=new URLSearchParams(location.search);var z=q.get('z')==='malgorzata';if(z){q.delete('z');history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+location.hash)}if(z||sessionStorage.getItem('amArrive')){sessionStorage.removeItem('amArrive');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('arrive')}}catch(e){}</script>
+<link rel="stylesheet" href="css/am.css?v=7">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+<link rel="stylesheet" href="css/arrive.css?v=1">
+<script src="js/arrive.js?v=1"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Florist","name":"AM Flowers","alternateName":"Kwiaciarnia Małgorzata","url":"https://amflowers.pl/","image":"https://amflowers.pl/img/og.jpg","telephone":["+48505308258","+48570740729"],"address":{"@type":"PostalAddress","streetAddress":"ul. J. Iwaszkiewicza 137B","addressLocality":"Oława","postalCode":"55-200","addressCountry":"PL"},"sameAs":["https://www.instagram.com/malgorzatakwiaciarnia/","https://www.facebook.com/kwiaciarniamalgorzata"],"department":{"@type":"Store","name":"Kwiatomat 24/7 AM Flowers","address":{"@type":"PostalAddress","streetAddress":"ul. ks. prał. F. Kutrowskiego 29","addressLocality":"Oława","postalCode":"55-200","addressCountry":"PL"},"openingHours":"Mo-Su 00:00-23:59"}}
 </script>
 </head>
 <body>
-<div class="arrive-veil" aria-hidden="true"><i class="l"></i><i class="r"></i><div class="mark"><img src="logo/am-flowers-gold.svg" alt="" width="1233" height="947"><p>Ta sam<b>AM</b>iłość do kwiatów.</p></div></div>
+<div class="arrive-veil" aria-hidden="true"><i class="l"></i><i class="r"></i><div class="mark"><img src="logo/am-flowers-gold.svg" alt="" width="1233" height="947"><p>Dwa pokolenia,<br><b>AM</b>iłość do kwiatów ta sama.</p></div></div>
 <a class="skip" href="#tresc">Przejdź do treści</a>
 
 <header class="site-head" id="top">
@@ -72,7 +74,7 @@
     <div class="wrap">
       <div class="copy">
         <p class="eyebrow rv">AM Flowers · Oława</p>
-        <h1 id="hero-h" class="rv rv-d1" aria-label="Ta sama AMiłość do kwiatów. Teraz w dwóch pokoleniach."><span aria-hidden="true">Ta sam<span class="am">AM</span>iłość do&nbsp;kwiatów.<em>Teraz w dwóch pokoleniach.</em></span></h1>
+        <h1 id="hero-h" class="rv rv-d1" aria-label="Dwa pokolenia, AMiłość do kwiatów ta sama."><span aria-hidden="true">Dwa pokolenia,<em><span class="am">AM</span>iłość do&nbsp;kwiatów ta&nbsp;sama.</em></span></h1>
         <p class="lead rv rv-d2">Kwiaciarnia Małgorzata rośnie. Mama i córka układają bukiety tak jak dotąd, a do tego zamówisz je online i kupisz w kwiatomacie czynnym całą dobę.</p>
         <div class="ctas rv rv-d3">
           <a class="btn btn-gold" href="sklep.html">Zamów bukiet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -183,7 +185,7 @@
         </article>
           <article class="svc lift rv">
           <div class="frame"><i class="c2"></i><img src="img/oferta-prezenty.webp" width="900" height="1200" alt="Szmaragdowe pudełka prezentowe z małymi bukietami i bilecikami ze złotą ramką" loading="lazy"></div>
-          <div class="svc-body"><small>Upominki</small><h3>Kosze i zestawy prezentowe</h3><p>Bukiet z dodatkiem: słodycze, świeca, wino, bilecik pisany ręcznie. Dopasujemy do okazji i budżetu.</p><a href="#kontakt">Ułóż zestaw <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <div class="svc-body"><small>Upominki</small><h3>Kosze i zestawy prezentowe</h3><p>Bukiet z dodatkiem: słodycze, świeca, bilecik pisany ręcznie. Dopasujemy do okazji i budżetu.</p><a href="#kontakt">Ułóż zestaw <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </article>
           <article class="svc lift rv rv-d1">
           <div class="frame"><i class="c2"></i><img src="img/oferta-rosliny.webp" width="900" height="1200" alt="Rośliny doniczkowe w ceramicznych osłonkach i szklany słój z mchem na parapecie" loading="lazy"></div>
@@ -207,7 +209,7 @@
 
   <section class="section on-dark kiosk" id="kwiatomat" aria-labelledby="h-kiosk">
     <div class="wrap kiosk-grid">
-      <figure class="frame lift rv" style="margin:0"><i class="c2"></i><img src="img/f6-800.webp" srcset="img/f6-800.webp 800w, img/f6-lg.webp 896w" sizes="(min-width:56em) 45vw, 100vw" width="896" height="1200" alt="Szmaragdowy kwiatomat z podświetlonymi szybkami, w każdej bukiet w kremowym papierze" loading="lazy"></figure>
+      <figure class="frame lift rv" style="margin:0"><i class="c2"></i><img src="img/kwiatomat-800.webp" srcset="img/kwiatomat-800.webp 800w, img/kwiatomat-lg.webp 1162w" sizes="(min-width:56em) 45vw, 100vw" width="1162" height="1452" alt="Czarny kwiatomat z podświetlonym napisem 24H i bukietami za przeszklonymi drzwiami" loading="lazy"><figcaption>Zdjęcie poglądowe</figcaption></figure>
       <div>
         <div class="k247 rv"><img src="logo/ornament-star.svg" width="110" height="110" alt=""><span aria-hidden="true">24/7</span></div>
         <p class="eyebrow rv">Kwiatomat AM Flowers</p>
@@ -344,6 +346,6 @@
   <svg class="orn-cap b" viewBox="0 0 40 40"><path class="d" d="M20 38l5-6-5-6-5 6z"/><path d="M16.5 0v13c0 4-2.5 5.5-7 5.5M23.5 0v13c0 4 2.5 5.5 7 5.5"/></svg>
   <span class="orn-thumb"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="o"/><circle cx="50" cy="50" r="36" class="i"/><polygon points="50.0,23.0 54.0,40.3 69.1,30.9 59.7,46.0 77.0,50.0 59.7,54.0 69.1,69.1 54.0,59.7 50.0,77.0 46.0,59.7 30.9,69.1 40.3,54.0 23.0,50.0 40.3,46.0 30.9,30.9 46.0,40.3"/></svg></span>
 </div>
-<script src="js/am.js?v=6" defer></script>
+<script src="js/am.js?v=7" defer></script>
 </body>
 </html>

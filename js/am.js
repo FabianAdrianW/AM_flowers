@@ -1,9 +1,5 @@
 (() => {
   const root = document.documentElement;
-  if (root.classList.contains('arrive')) {
-    setTimeout(() => root.classList.add('arrive-go'), 650);
-    setTimeout(() => root.classList.remove('arrive', 'arrive-go'), 1800);
-  }
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const head = document.querySelector('.site-head');
   const brand = head.querySelector('.brand img');

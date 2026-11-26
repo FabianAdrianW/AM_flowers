@@ -4,8 +4,8 @@
     "name": "AM Flowers",
     "legacy_name": "Kwiaciarnia Małgorzata",
     "descriptor": "Kwiaciarnia mamy i córki w Oławie: pracownia, sklep online, kwiatomat 24/7",
-    "promise": "Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.",
-    "promise_plain": "Ta sama AMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "promise": "Dwa pokolenia, AMiłość do kwiatów ta sama.",
+    "promise_plain": "Dwa pokolenia, AMiłość do kwiatów ta sama.",
     "transition_line": "Kwiaciarnia Małgorzata rośnie. AMiłość do kwiatów zostaje.",
     "essence": "Tradycja mamy, nowoczesność córki, jedne ręce do kwiatów.",
     "since": {"am_flowers": "2021 (H)", "malgorzata": "TODO"}
@@ -65,7 +65,7 @@
     "shadow_avoid": "dystans i „drogo na pokaz”: ręce przy pracy w ważnych kadrach, widoczne ceny, ciepły język"
   },
   "soul": {
-    "brand_line": "Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "brand_line": "Dwa pokolenia, AMiłość do kwiatów ta sama.",
     "metaphor": "splot",
     "motif": "podwójna złota linia z wizytówki: narożnik, przerywnik z rombem, okrąg z gwiazdą",
     "prop": "szmaragdowa satynowa wstążka",
@@ -81,7 +81,7 @@
   ],
   "method": ["Wybierasz", "Florystka układa", "Odbierasz: pracownia, kwiatomat 24/7 albo dostawa"],
   "messages": {
-    "hero": "Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.",
+    "hero": "Dwa pokolenia, AMiłość do kwiatów ta sama.",
     "short": "AM Flowers to Kwiaciarnia Małgorzata w nowej odsłonie: mama i córka, pracownia w Oławie, sklep online i kwiatomat 24/7.",
     "cta": "Zamów bukiet",
     "cta_secondary": "Znajdź kwiatomat",

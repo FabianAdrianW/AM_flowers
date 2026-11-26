@@ -44,7 +44,7 @@ Lokalnie: `npx wrangler pages dev .` (funkcje) albo `python3 -m http.server` (sa
 Ceny i produkty: `data/products.json`. Zdjęcie do `img/` (WebP, proporcja 4:5), ścieżka w `img`, opcjonalne drugie zdjęcie w `alt`. Pozycje z `"from": true` mają cenę „od” i są płatne przy odbiorze.
 
 ## Do uzupełnienia
-- Adres: na wizytówce 137B, w starym repo 137A. Potwierdzić.
+- Adres potwierdzony: ul. Iwaszkiewicza 137B.
 - Godziny otwarcia, e-mail, przypisanie telefonów (505 308 258 / 570 740 729).
 - Ceny, dopłaty za wielkość, koszt i strefa dostawy (robocze).
 - Pełna nazwa spółki AM Flowers, NIP, KRS w regulaminie i polityce prywatności.

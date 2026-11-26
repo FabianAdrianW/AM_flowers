@@ -18,7 +18,7 @@ Etykiety: S = właścicielskie (rozmowa, wizytówka), D = decyzja projektowa, H 
 | Cel istnienia | Żeby kwiaty od Małgorzaty były pod ręką wtedy, kiedy ludzie ich potrzebują, także w nocy i online | sklep online + kwiatomat 24/7 na pierwszym ekranie |
 | Misja | Mama i córka układają kwiaty tak jak przez lata, a podają je po nowemu | każda nowość (sklep, kwiatomat) pokazana obok rąk florystki |
 | Wizja | Pierwsza kwiaciarnia w Oławie, której nie trzeba szukać: jest w telefonie, przy sklepie i za rogiem | spójny znak na stronie, kwiatomacie, torbach |
-| Obietnica (hasło) | Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach. | hasło w hero, na bileciku, na kwiatomacie |
+| Obietnica (hasło) | Dwa pokolenia, AMiłość do kwiatów ta sama. | hasło w hero, na bileciku, na kwiatomacie |
 | Rola marki | Następczyni, nie konkurentka | „dawniej Kwiaciarnia Małgorzata” zawsze blisko logo w pierwszym roku |
 
 **Istota marki:** Tradycja mamy, nowoczesność córki, jedne ręce do kwiatów.
@@ -59,11 +59,11 @@ Propozycja Fabiana: „Nowe oblicze Małgorzaty, AMiłość do kwiatów ta sama�
 
 | # | Hasło | Gdzie |
 |---|---|---|
-| 1 | **Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.** (rekomendacja) | hero AM Flowers, bilecik |
+| 1 | **Dwa pokolenia, AMiłość do kwiatów ta sama.** (rekomendacja) | hero AM Flowers, bilecik |
 | 2 | Kwiaciarnia Małgorzata rośnie. AMiłość do kwiatów zostaje. | etykieta suwaka na stronie Małgorzaty, sekcja „Nasza historia” |
 | 3 | AMiłość do kwiatów. Od mamy i córki. | krótka wersja: social, kwiatomat, torby |
 
-Zapis „samAMiłość”: „sama” i „AMiłość” dzielą literę A. „AM” zawsze w złocie, reszta w kolorze tekstu, żeby czytało się jako gra słów, a nie literówka. Dla czytników ekranu i SEO pełny zapis „Ta sama AMiłość do kwiatów”.
+Zapis „AMiłość”: „AM” zawsze w złocie, reszta w kolorze tekstu, żeby czytało się jako gra słów, a nie literówka. Dla czytników ekranu i SEO ten sam pełny zapis.
 
 ## Logo (uwagi do plików)
 - Decyzja Fabiana: logo zostaje dokładnie takie, jak w przesłanych plikach (kształt liter, kroje). Oba znaki przerysowane do wektora 1:1, z napisem „KWIACIARNIA „MAŁGORZATA”” włącznie.

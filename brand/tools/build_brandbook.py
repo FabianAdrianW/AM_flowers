@@ -32,18 +32,18 @@ def ch(num, kicker, title, lead, body):
 
 S = []
 
-S.append(ch('01', 'Istota / Zdanie marki', f'Ta sam{AM}iłość do kwiatów.',
+S.append(ch('01', 'Istota / Zdanie marki', f'Dwa pokolenia, {AM}iłość do kwiatów ta sama.',
   'Kwiaciarnia Małgorzata nie znika, tylko rośnie. AM Flowers to ta sama pracownia i te same bukiety, a do tego zamówienie z telefonu i kwiaty o północy.',
   '<p class="big">Tradycja mamy, nowoczesność córki, jedne ręce do kwiatów.</p>'
   + table(['Poziom', 'Definicja marki', 'Konsekwencja wykonawcza'], [
     ['Cel istnienia', 'Kwiaty od Małgorzaty pod ręką wtedy, kiedy są potrzebne, także w nocy i online', 'sklep i kwiatomat 24/7 widoczne na pierwszym ekranie'],
     ['Misja', 'Mama i córka układają kwiaty jak przez lata, a podają je po nowemu', 'każda nowość pokazana obok rąk florystki'],
     ['Wizja', 'Kwiaciarnia w Oławie, której nie trzeba szukać: w telefonie, przy sklepie, za rogiem', 'jeden znak na stronie, kwiatomacie i torbach'],
-    ['Obietnica', 'Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.', 'hasło w hero, na bileciku i na kwiatomacie'],
+    ['Obietnica', 'Dwa pokolenia, AMiłość do kwiatów ta sama.', 'hasło w hero, na bileciku i na kwiatomacie'],
     ['Rola marki', 'Następczyni, nie konkurentka', 'przez pierwszy rok przy logo: „dawniej Kwiaciarnia Małgorzata”'],
   ])
   + '<h3>Zdanie marki jako filtr</h3><p>Każdy tekst, zdjęcie i animacja ma potwierdzać, że klient kupuje dalej u Małgorzaty, tylko wygodniej. Element, który tego nie potwierdza, wypada.</p>'
-  + '<h3>Zapis hasła</h3><p>„Ta sam<b class="g">AM</b>iłość” łączy słowo „sama” z „AMiłość”: litera A jest wspólna. „AM” zawsze w złocie, reszta w kolorze tekstu. W kodzie strony i w opisach dla wyszukiwarek pełny zapis: „Ta sama AMiłość do kwiatów”.</p>'))
+  + '<h3>Zapis hasła</h3><p>„<b class="g">AM</b>iłość” łączy monogram z emocją. „AM” zawsze w złocie, reszta w kolorze tekstu. W kodzie strony i w opisach dla wyszukiwarek ten sam pełny zapis: „Dwa pokolenia, AMiłość do kwiatów ta sama.”</p>'))
 
 S.append(ch('01a', 'Archetyp / Dusza marki', 'Twórca z sercem Kochanka',
   'Archetyp ustala ton, zdjęcia, kolor i ruch. Główny daje wiarygodność, wspierający daje styl.',
@@ -115,7 +115,7 @@ S.append(ch('05', 'Komunikacja / Tone of voice', 'Mówimy jak florystka przy lad
     ['Innowacyjne rozwiązanie sprzedażowe', 'Kwiatomat przy Intermarché. Czynny całą dobę'],
   ])
   + '<h3>Gotowe komunikaty</h3><div class="copies">'
-  + copy('Hasło', 'Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.')
+  + copy('Hasło', 'Dwa pokolenia, AMiłość do kwiatów ta sama.')
   + copy('Hasło przejścia', 'Kwiaciarnia Małgorzata rośnie. AMiłość do kwiatów zostaje.')
   + copy('Krótko (1 zdanie)', 'AM Flowers to Kwiaciarnia Małgorzata w nowej odsłonie: mama i córka, pracownia w Oławie, sklep online i kwiatomat 24/7.')
   + copy('Średnio (3 zdania)', 'Od lat układamy bukiety w pracowni przy Iwaszkiewicza. Teraz robimy to we dwie: mama i córka. Bukiet zamówisz online, odbierzesz w pracowni albo w kwiatomacie przy Intermarché, czynnym całą dobę.')
@@ -162,7 +162,7 @@ S.append(ch('07', 'Paleta / Kontrast', 'Papier i złoto, szmaragd do głębi',
 
 S.append(ch('08', 'Kroje / Hierarchia', 'Kaligrafia w logo, spokój w tekście',
   'Dwa kroje na licencji SIL Open Font License, hostowane lokalnie z polskimi znakami.',
-  '<div class="types"><div><span class="d1">Ta sam<i class="g">AM</i>iłość</span><small>Cormorant Garamond 400 · display 56–72 px · kursywa do akcentów</small></div>'
+  '<div class="types"><div><span class="d1"><i class="g">AM</i>iłość</span><small>Cormorant Garamond 400 · display 56–72 px · kursywa do akcentów</small></div>'
   + '<div><span class="d2">Bukiety z pracowni</span><small>Cormorant Garamond 500 · h2 32–40 px</small></div>'
   + '<div><span class="d3">Zamów online i odbierz w pracowni albo w kwiatomacie.</span><small>Jost 400 · tekst 16 px · interlinia 1.6</small></div>'
   + '<div><span class="d4">Kwiatomat · czynny 24/7</span><small>Jost 500 · etykieta 11–12 px · wersaliki · odstęp .18em</small></div></div>'
@@ -197,7 +197,7 @@ S.append(ch('10', 'Środowisko cyfrowe', 'Dwie strony i jeden suwak',
   + '<li><b>Spoczynek.</b> W hero strony Małgorzaty cienka złota szyna z okrągłym uchwytem (monogram AM). Etykieta: „Kwiaciarnia Małgorzata rośnie. Przeciągnij →”.</li>'
   + '<li><b>Przeciąganie.</b> Za uchwytem odsłania się szmaragd, a dwie złote linie biegną za nim. Na mobile palcem, na desktopie myszą; klik i Enter też uruchamiają przejście.</li>'
   + '<li><b>Splot.</b> Po przekroczeniu 60% linie splatają się w podwójny narożnik i domykają ekran (ok. 900 ms).</li>'
-  + '<li><b>Otwarcie.</b> Kurtyna rozsuwa się od środka, pojawia się logo AM Flowers i hasło „Ta samAMiłość do kwiatów”.</li>'
+  + '<li><b>Otwarcie.</b> Kurtyna rozsuwa się od środka, pojawia się logo AM Flowers i hasło „Dwa pokolenia, AMiłość do kwiatów ta sama”.</li>'
   + '<li><b>Dostępność.</b> Przy <code>prefers-reduced-motion</code> bez animacji, zwykłe przejście. Zawsze jest też zwykły link „AM Flowers”.</li></ol>'
   + req([['Ruch', 'ease-out, 600–900 ms; nic się nie odbija i nie kołysze'],
          ['Hover na kartach', 'złote narożniki dosuwają się do rogów zdjęcia, zdjęcie przybliża się o 3%'],
@@ -340,7 +340,7 @@ code{font-family:ui-monospace,Menlo,monospace}
 def build():
     toc = ''.join(f'<a href="#c{n}"><span>{n}</span>{k.split(" / ")[0]}</a>' for n, k, t in CH)
     cover = (f'<header class="cover"><div class="over"><span>AM Flowers / Kwiaciarnia / Oława</span><span>Brand book {VERSION} · LITE</span></div>'
-             f'<div class="mid"><img src="{LOGO["gold"]}" alt="AM flowers"><h1 aria-label="Ta sama AMiłość do kwiatów. Teraz w dwóch pokoleniach."><span aria-hidden="true">Ta sam<span style="color:var(--gold)">AM</span>iłość do kwiatów.</span><em aria-hidden="true">Teraz w dwóch pokoleniach.</em></h1></div>'
+             f'<div class="mid"><img src="{LOGO["gold"]}" alt="AM flowers"><h1 aria-label="Dwa pokolenia, AMiłość do kwiatów ta sama."><span aria-hidden="true">Dwa pokolenia,</span><em aria-hidden="true"><span style="color:var(--gold)">AM</span>iłość do kwiatów ta sama.</em></h1></div>'
              f'<div class="sub">System marki · projekt do oceny właścicielskiej · 2026</div></header>')
     html = (f'<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>AM Flowers · Brand book {VERSION}</title><style>{FONTS}{CSS}</style></head><body>'

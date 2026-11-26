@@ -33,8 +33,8 @@ Zasada kontrastu: złoto #C9A45C nigdy jako tekst na papierze (2.8:1). Na papier
 - Okrąg z gwiazdą: favicon, loader, znacznik „24/7”, punkt na suwaku.
 
 ## Hasło
-- Zapis wizualny: `Ta sam<span class="am">AM</span>iłość do kwiatów.` + kursywa „Teraz w dwóch pokoleniach.”
-- `aria-label` i `<title>`/meta: „Ta sama AMiłość do kwiatów. Teraz w dwóch pokoleniach.”
+- Zapis wizualny: `Dwa pokolenia,` + kursywa `<span class="am">AM</span>iłość do kwiatów ta sama.`
+- `aria-label` i `<title>`/meta: „Dwa pokolenia, AMiłość do kwiatów ta sama.”
 
 ## Struktura strony AM Flowers (propozycja)
 1. Hero (szmaragd, zdjęcie #1, hasło, CTA „Zamów bukiet” + „Znajdź kwiatomat”).

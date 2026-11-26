@@ -1,0 +1,11 @@
+/* AM Flowers · kurtyna otwierająca (samodzielna, bez zmiennych ze stron) */
+.arrive-veil{display:none}
+.arrive .arrive-veil{display:block;position:fixed;inset:0;z-index:999;pointer-events:none}
+.arrive-veil i{position:absolute;top:0;bottom:0;width:50.5%;background:#0A1E19;transition:transform 1s cubic-bezier(.76,0,.24,1)}
+.arrive-veil .l{left:0;border-right:1px solid #C9A45C}.arrive-veil .r{right:0;border-left:1px solid #C9A45C}
+.arrive-veil .mark{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;padding:2rem;text-align:center;transition:opacity .45s cubic-bezier(.22,1,.36,1)}
+.arrive-veil .mark img{width:min(46vw,15rem);height:auto}
+.arrive-veil .mark p{margin:0;font:400 clamp(1.5rem,3.6vw,2.4rem)/1.15 'Cormorant','AM Cormorant',Georgia,serif;color:#F4EEE3}
+.arrive-veil .mark b{color:#C9A45C;font-weight:500}
+.arrive-go .arrive-veil .l{transform:translateX(-101%)}.arrive-go .arrive-veil .r{transform:translateX(101%)}
+.arrive-go .arrive-veil .mark{opacity:0}

@@ -134,4 +134,4 @@ Deep emerald silk fabric slowly unfolding and rippling, thin gold light reflecti
 5. Oba telefony do kwiaciarni (H).
 6. Domena: amflowers.pl (H).
 7. Logo: dwa pliki od Fabiana (monogram, wspólny znak).
-8. Hasło: „Ta samAMiłość do kwiatów. Teraz w dwóch pokoleniach.” (zaakceptowane), przejście: „Kwiaciarnia Małgorzata rośnie. AMiłość do kwiatów zostaje.”
+8. Hasło: „Dwa pokolenia, AMiłość do kwiatów ta sama.” (zaakceptowane), przejście: „Kwiaciarnia Małgorzata rośnie. AMiłość do kwiatów zostaje.”

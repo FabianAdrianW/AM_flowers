@@ -231,7 +231,7 @@ def build():
 
     s1 = f"""<section class="sheet" aria-label="Arkusz 1: pełne spektrum"><i class="c2 a"></i><i class="c2 b"></i>{over}
 <div class="head"><img src="{LOGO['gold']}" alt="AM flowers">
-<div><h1 class="claim" aria-label="Ta sama AMiłość do kwiatów. Teraz w dwóch pokoleniach."><span aria-hidden="true">Ta sam<span class="am">AM</span>iłość do kwiatów.</span><em aria-hidden="true">Teraz w dwóch pokoleniach.</em></h1></div></div>
+<div><h1 class="claim" aria-label="Dwa pokolenia, AMiłość do kwiatów ta sama."><span aria-hidden="true">Dwa pokolenia,</span><em aria-hidden="true"><span class="am">AM</span>iłość do kwiatów ta sama.</em></h1></div></div>
 <p class="thesis"><span>Kwiaciarnia Małgorzata rośnie. Mama i córka układają kwiaty tak jak dotąd, a podają je po nowemu: w sklepie online i w kwiatomacie czynnym całą dobę.</span></p>
 <div class="mosaic">{mosaic}</div>
 <div class="method"><span class="lab">Metoda</span>Wybierasz <span class="ar">→</span> florystka układa <span class="ar">→</span> odbierasz <span class="alt">w pracowni · w kwiatomacie 24/7 · z dostawą</span></div>
